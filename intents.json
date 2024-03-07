@@ -1,0 +1,270 @@
+{
+    
+        "_comment": "This file has a list of messages that people might send to the chatbot and the ways the chatbot should reply.gitEach section is called an 'intent' and it helps the chatbot understand what people want when they message it.",
+      
+      
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": {
+                "en": [
+                    "Hi",
+                    "How are you?",
+                    "Is anyone there?",
+                    "Hello",
+                    "Good day"
+                ],
+                "fr" : [
+                    "Salut",
+                    "Comment vas-tu?",
+                    "Y a-t-il quelqu'un?",
+                    "Bonjour",
+                    "Bonne journée"
+                  ]
+            },
+            "responses": {
+                "en" : [
+                    "Hello! Welcome to Acity's help desk.",
+                    "Hi there! How can I assist you today?",
+                    "Good day! What information are you looking for?"
+                ],
+                "fr" : [
+                    "Bonjour! Bienvenue au bureau d'aide d'Acity.",
+                    "Salut! Comment puis-je vous aider aujourd'hui?",
+                    "Bonne journée! Quelles informations cherchez-vous?"
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "admission_requirements",
+            "patterns": {
+                "en" :[
+                    "What are the admission requirements?",
+                    "How can I apply to Acity?",
+                    "Entry criteria for Acity?"
+                ],
+                "fr":[
+                    "Quels sont les critères d'admission?",
+                    "Comment puis-je postuler à Acity?",
+                    "Quels sont les critères d'entrée pour Acity?"
+                  ]
+            },
+            "responses": {
+                "en" :[
+                    "Acity requires high school transcripts, standardized test scores, and a completed application form. For more details, visit our admissions page.",
+                    "To apply to Acity, please submit your application online along with the necessary documents."
+                ],
+                "fr" :[
+                    "Acity exige des relevés de notes du lycée, des scores de tests standardisés, et un formulaire de candidature complété. Pour plus de détails, visitez notre page d'admissions.",
+                    "Pour postuler à Acity, veuillez soumettre votre candidature en ligne avec les documents nécessaires."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "academic_programs",
+            "patterns": {
+                "en" :[
+                    "What courses do you offer?",
+                    "List of majors at Acity",
+                    "Can I study Engineering at Acity?"
+                ],
+                "fr":[
+                    "Quels cours proposez-vous?",
+                    "Liste des majeures à Acity",
+                    "Puis-je étudier l'ingénierie à Acity?"
+                  ]
+            },
+            "responses": {
+                "en": [
+                    "Acity offers a wide range of programs including Engineering, Business, IT, and more. Visit our programs page for a full list.",
+                    "Yes, Engineering is one of our flagship programs with several specializations available."
+                ],
+                "fr": [
+                    "Acity propose une large gamme de programmes incluant l'Ingénierie, le Commerce, l'IT, et plus encore. Visitez notre page des programmes pour une liste complète.",
+                    "Oui, l'Ingénierie est l'un de nos programmes phares avec plusieurs spécialisations disponibles."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "campus_facilities",
+            "patterns": {
+                "en": [
+                    "What facilities does Acity have?",
+                    "Tell me about the campus life at Acity."
+                ],
+                "fr": [
+                    "Quelles installations Acity possède-t-il?",
+                    "Parlez-moi de la vie sur le campus à Acity."
+                  ]
+            },
+            "responses": {
+                "en": [
+                    "Our campus boasts state-of-the-art facilities, including labs, libraries, sports complexes, and student housing.",
+                    "Campus life at Acity is vibrant with various clubs, events, and activities for students."
+                ],
+                "fr":[
+                    "Notre campus dispose d'installations de pointe, y compris des laboratoires, bibliothèques, complexes sportifs, et logements étudiants.",
+                    "La vie sur le campus à Acity est dynamique avec divers clubs, événements, et activités pour les étudiants."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "tuition_fees",
+            "patterns": {
+                "en":[
+                    "What are the tuition fees?",
+                    "How much does it cost to study at Acity?"
+                ],
+                "fr":[
+                    "Quels sont les frais de scolarité?",
+                    "Combien coûte les études à Acity?"
+                  ]
+            },
+            "responses": {
+                "en":[
+                    "Tuition fees vary by program. For a detailed breakdown, please visit our tuition fees page.",
+                    "Financial aid and scholarships are available for eligible students to help cover tuition costs."
+                ],
+                "fr":[
+                    "Les frais de scolarité varient selon le programme. Pour une ventilation détaillée, veuillez visiter notre page des frais de scolarité.",
+                    "Des aides financières et bourses sont disponibles pour les étudiants éligibles afin de couvrir les coûts de scolarité."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "scholarships_financial_aid",
+            "patterns": {
+                "en": [
+                    "How can I apply for scholarships?",
+                    "What financial aid is available?",
+                    "Are there scholarships for international students?"
+                ],
+                "fr":[
+                    "Comment puis-je postuler pour des bourses?",
+                    "Quelle aide financière est disponible?",
+                    "Y a-t-il des bourses pour les étudiants internationaux?"
+                  ]
+            },
+            "responses": {
+                "en": [
+                    "Acity offers a variety of scholarships and financial aid options based on merit and need. Check our website for application details.",
+                    "International students are eligible for certain scholarships. Visit our financial aid section for more information."
+                ],
+                "fr":[
+                    "Acity offre une variété de bourses et options d'aide financière basées sur le mérite et le besoin. Consultez notre site Web pour les détails de l'application.",
+                    "Les étudiants internationaux sont éligibles pour certaines bourses. Visitez notre section d'aide financière pour plus d'informations."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "student_support_services",
+            "patterns":{
+                "en":  [
+                    "What student support services does Acity offer?",
+                    "Is there a counseling center on campus?",
+                    "How can I get academic advising?"
+                ],
+                "fr":[
+                    "Quels services de soutien aux étudiants Acity offre-t-il?",
+                    "Y a-t-il un centre de conseil sur le campus?",
+                    "Comment puis-je obtenir des conseils académiques?"
+                  ]
+            },
+            "responses": {
+                "en": [
+                    "Acity provides comprehensive student support including counseling services, academic advising, and career services.",
+                    "Our counseling center offers free and confidential support to all students. Academic advising can be scheduled through your department."
+                ],
+                "fr":[
+                    "Acity offre un soutien étudiant complet incluant des services de conseil, des conseils académiques, et des services de carrière.",
+                    "Notre centre de conseil offre un soutien gratuit et confidentiel à tous les étudiants. Les conseils académiques peuvent être programmés à travers votre département."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "study_abroad_opportunities",
+            "patterns": {
+                "en": [
+                    "Can I study abroad while at Acity?",
+                    "What international programs are available?",
+                    "Are there partner universities for exchange programs?"
+                ],
+                "fr": [
+                    "Puis-je étudier à l'étranger tout en étant à Acity?",
+                    "Quels programmes internationaux sont disponibles?",
+                    "Y a-t-il des universités partenaires pour les programmes d'échange?"
+                  ]
+            },
+            "responses": {
+                "en": [
+                    "Acity students have opportunities to study abroad through our various international programs and partnerships with universities worldwide.",
+                    "Check our study abroad section for a list of partner universities and available programs."
+                ],
+                "fr":[
+                    "Les étudiants d'Acity ont des opportunités d'étudier à l'étranger grâce à nos divers programmes internationaux et partenariats avec des universités dans le monde entier.",
+                    "Consultez notre section d'études à l'étranger pour une liste des universités partenaires et des programmes disponibles."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "campus_life_activities",
+            "patterns": {
+                "en":[
+                    "What extracurricular activities can I join?",
+                    "Tell me about campus clubs and organizations.",
+                    "Are there sports teams at Acity?"
+                ],
+                "fr":[
+                    "Quelles activités parascolaires puis-je rejoindre?",
+                    "Parlez-moi des clubs et organisations du campus.",
+                    "Y a-t-il des équipes sportives à Acity?"
+                  ]
+            },
+            "responses": {
+                "en": [
+                    "Acity offers a wide range of extracurricular activities, including clubs, organizations, and varsity sports teams. There's something for everyone!",
+                    "Joining a club or organization is a great way to meet people and enrich your university experience."
+                ],
+                "fr":[
+                    "Acity propose une large gamme d'activités parascolaires, y compris des clubs, organisations, et équipes sportives universitaires. Il y en a pour tous les goûts!",
+                    "Rejoindre un club ou une organisation est un excellent moyen de rencontrer des gens et d'enrichir votre expérience universitaire."
+                  ]
+            },
+            "context_set": ""
+        },
+        {
+            "tag": "housing_accommodation",
+            "patterns": {
+                "en": [
+                    "What housing options are available?",
+                    "Can I live on campus?",
+                    "What are the dormitories like?"
+                ],
+                "fr":[
+                    "Quelles options de logement sont disponibles?",
+                    "Puis-je vivre sur le campus?",
+                    "À quoi ressemblent les dortoirs?"
+                  ]
+            },
+            "responses":{
+                "en":  [
+                    "Acity offers several housing options from on-campus dormitories to off-campus apartments. Visit our housing section for more details.",
+                    "Our dormitories provide a safe and comfortable living environment, with various amenities and meal plans."
+                ],
+                "fr":[
+                    "Acity offre plusieurs options de logement, des dortoirs sur le campus aux appartements hors campus. Visitez notre section logement pour plus de détails.",
+                    "Nos dortoirs offrent un environnement de vie sûr et confortable, avec diverses commodités et plans de repas."
+                  ]
+            },
+            "context_set": ""
+        }
+    ]
+}
